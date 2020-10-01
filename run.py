@@ -16,8 +16,8 @@ def about():
 
     data = []
 
-    with open("data/company.json", "r") as json_data:
-        data = json.load(json_data)
+    with open("data/company.json", "r") as company:
+        data = json.load(company)
         return render_template("about.html", page_title="About", company=data)
 
 
